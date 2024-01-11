@@ -1,12 +1,20 @@
-body {
-    background: #DDDDDD;
+:root {
+    --main-background-color: #FFFFD6;
+    --main-accent-color: #E6754B;
+    --main-font-family: Kreon;
 }
 
-.navbar {
-    background-color: #800000;
-    color: white;
+body {
+    background: var(--main-background-color);
 }
 
 .page-container {
-    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.level-1-map {
+    height: 100%;
 }
