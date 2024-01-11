@@ -62,7 +62,7 @@ body {
 
 #startButton:hover { 
     background-color: var(--orange);
-    border-color: var(--beige);
+    border-color: var(--orange);
     color: var(--beige);
 }
 
