@@ -22,24 +22,48 @@ body {
 .page-container {
     margin-top: 75px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#test {
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 #waldoPic {
-    height: 450px;
+    width: 170px;
 }
 
+#column1 {
+    width: 170px;
+}
+
+#column2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 #startButton {
+    background-color: var(--beige);
     border-radius: 50%; 
     border-color: var(--orange);
-    background-image: url(images/start.png);
     border-style: solid;
     border-width: 3px;
     height: 150px;
     width: 150px;
-    background-color: transparent;
+    color: var(--orange);
+    font-size: 75px;
+}
 
+#startButton:hover { 
+    background-color: var(--orange);
+    border-color: var(--beige);
+    color: var(--beige);
 }
 
 #welcome {
@@ -51,12 +75,12 @@ body {
 #ISPY {
     color: var(--orange);
     font-family:Cooper, 'Times New Roman', Times, serif;
-    font-size: 70px;
+    font-size: 80px;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
+    margin: 10px;
+    text-align: center;
     justify-content: center;
 }
 
