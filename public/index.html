@@ -6,27 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
   <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/indexpage.css">
   <title>I-Spy</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">I-Spy</a>
-  </nav>
-  <div id="welcomePage" class="container page-container">
+  <div class="insideBorder">
+    <div id="welcomePage" class="container page-container">
+      <!-- <row class="row">
+        <div></div>
+        <div>Welcome To</div>
+        <div><img src="images/waldo2.png" id="waldoPic" /></div>
+      </row>
+      <row class="row">
+        <div>I-SPY</div>
+      </row>
+      <row class="row">
+        <div id="startButton"></div>
+      </row> -->
 
+
+      <column class="column"></column>
+      <column class="column">
+        <div id="welcome">Welcome To</div>
+        <div id="ISPY">I-SPY</div>
+        <button type="button" id="startButton"></button>
+      </column>
+      <column class="column"><div><img src="images/waldo2.png" id="waldoPic" /></div></column>
+
+
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/popper.js"></script>
+    <script src="scripts/bootstrap-material-design.js"></script>
+    <script>$("body").bootstrapMaterialDesign();</script>
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="scripts/main.js"></script>
   </div>
-  <script src="scripts/jquery.min.js"></script>
-  <script src="scripts/popper.js"></script>
-  <script src="scripts/bootstrap-material-design.js"></script>
-  <script>$("body").bootstrapMaterialDesign();</script>
-  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
-  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
-  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
-  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
-  <script src="/__/firebase/init.js"></script>
-  <script src="scripts/main.js"></script>
 </body>
 
 </html>
